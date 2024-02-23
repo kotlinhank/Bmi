@@ -5,7 +5,11 @@ class Hello {
 }
 
 fun main() {
+    val p = Person()
+    p.hello()
+
     println("Hello Kotlin!")
+
     //Byte, Short, Int, Long
     val age = 20
     val population = 9999L
