@@ -3,11 +3,20 @@ package com.hank.bmi
 class Hello {
 
 }
-
 fun main() {
-    val p = Person()
+    val p = Person("Jack", 65.5f, 1.7f)
+    println(p.bmi())
+    val hank = Person("Hank", 70f, 1.75f)
+    println(p.name + " " + p.bmi())
+    println(hank.name + " " + hank.bmi())
     p.hello()
+    //BMI
+    val w = 65.5f
+    val h = 1.7f
+    val bmi = w / (h * h)
+    println("BMI:" + bmi)
 
+    /*
     println("Hello Kotlin!")
 
     //Byte, Short, Int, Long
@@ -25,5 +34,5 @@ fun main() {
     val isAdult = false
     //Char
     val c = 'A'
-    println(c)
+    println(c)*/
 }
