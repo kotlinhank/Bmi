@@ -14,7 +14,6 @@ fun main() {
             println("Smaller")
         } else {
             println("You got it!")
-
         }
     }
 

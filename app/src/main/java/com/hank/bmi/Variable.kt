@@ -1,6 +1,27 @@
 package com.hank.bmi
 
 fun main() {
+    val array = intArrayOf(2,5,8)
+    println(array[2])
+    val ss = arrayOf("SUN", "MON", "TUE")
+    println(ss.size)
+    println(ss.get(0))
+    for (day in ss) {
+        println(day)
+    }
+
+    //For
+    val range = 0..10
+    for (i in 1..30) {
+        if (i%2 == 1) {
+            print("*")
+        } else {
+            print(" ")
+        }
+    }
+    println()
+    for (i in 1..10 step 2) print(i)
+    println()
     var name:String? = "Hank"
     println(name?.length)
     println(name ?: 0 )
